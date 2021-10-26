@@ -23,4 +23,4 @@ import { DatabaseRegistry } from '@liberation-data/drivine/connection/DatabaseRe
     controllers: [AppController],
     providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
