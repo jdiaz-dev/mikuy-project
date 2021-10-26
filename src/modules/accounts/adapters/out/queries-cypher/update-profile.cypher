@@ -1,0 +1,1 @@
+MATCH (a:Account{id:$accountId}) set a += $updateProfile return a
