@@ -1,0 +1,1 @@
+MATCH (a:Account{id: $accountId})-[:CREATED]->(b:Business{id: $businessId})-[:CONTAINS]->(m:Menu{id: $menuId})-[:HAS]->(c:Category{id: $categoryId}) set c += $categoryProps return c

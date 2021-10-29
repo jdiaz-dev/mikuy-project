@@ -1,0 +1,1 @@
+MATCH (a:Account{id:$accountId}) CREATE (b:Business{}), (a)-[:CREATED]->(b) set b += $businessProps  return b

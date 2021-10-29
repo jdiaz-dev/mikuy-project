@@ -6,6 +6,7 @@ import { IUpdateProfileAccountRequest } from '../../application/ports/in/update-
 import { AccountsPersistenceService } from '../out/accounts-persistence.service';
 import { CreateAccountDto } from './dtos/create-account.dto';
 import { UpdatePhoneDto } from './dtos/update-phone.dto';
+import { UpdatePhotoDto } from './dtos/update-photo.dto';
 import { UpdateProfileAccountDto } from './dtos/update-profile-account';
 
 @Controller('accounts')
@@ -40,7 +41,7 @@ export class AccountsController {
         return this.updatePhoneRequest.updateThePhone(accountId, updatePhoneDto);
     }
     @Post(':accountId/photo')
-    updatePhoto(@Param('accountId') accountId: string, @Body() updatePhoneDto: UpdatePhoneDto) {
-        return this.updatePhoneRequest.updateThePhone(accountId, updatePhoneDto);
+    updatePhoto(@Param('accountId') accountId: string, @Body() updatePhotoDto: UpdatePhotoDto) {
+        return this.updatePhotoRequest.updateThePhoto(accountId, updatePhotoDto);
     }
 }

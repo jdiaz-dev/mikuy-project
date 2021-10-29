@@ -1,4 +1,4 @@
-import { IsNumber, IsString, IsEmail } from 'class-validator';
+import { IsString } from 'class-validator';
 
 export class UpdateProfileAccountDto {
     @IsString()
@@ -6,9 +6,6 @@ export class UpdateProfileAccountDto {
 
     @IsString()
     surnames: string;
-
-    @IsNumber()
-    phone: number;
 
     @IsString()
     photo: string;

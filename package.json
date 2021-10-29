@@ -9,7 +9,7 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nodemon src/main.ts --exec \"ts-node\" src/server.ts",
+    "dev": "nodemon src/main.ts --exec \"ts-node\" src/server.ts",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
@@ -29,10 +29,13 @@
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
     "neo4j-driver": "^4.3.4",
+    "nest-winston": "^1.6.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3",
+    "winston-azure-blob": "^1.1.5"
   },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",

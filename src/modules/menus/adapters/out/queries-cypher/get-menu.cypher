@@ -1,0 +1,1 @@
+MATCH (a:Account{id: $accountId})-[:CREATED]->(b:Business{id: $businessId})-[:CONTAINS]->(m:Menu{id: $menuId, state:true})  return m

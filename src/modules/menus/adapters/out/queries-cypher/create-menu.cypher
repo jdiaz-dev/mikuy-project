@@ -1,0 +1,1 @@
+MATCH (a:Account{id: $accountId})-[:CREATED]->(b:Business{id: $businessId}) CREATE (m:Menu{}),  (b)-[:CONTAINS]->(m) set m += $menuProps return m

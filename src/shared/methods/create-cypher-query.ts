@@ -7,7 +7,6 @@ export const createCypherQuery = (_properties: any, statement: string, nameProps
         ...nodeIds,
     };
     parameters[nameProps] = properties;
-
     const query = new QuerySpecification(statement).bind(parameters);
     return query;
 };
